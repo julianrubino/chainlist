@@ -181,6 +181,8 @@ const privacyStatement = {
     "At Histori, we do not log, store, or track your IP address, country, location, or any personal data while making RPC requests and REST API calls. Learn more at: https://histori.xyz/support/privacy-policy",
   MemeCore:
     "We do not log, store, or track any user data without consent with exception of data publicly available on chain.",
+  ReliableNinjas:
+     "At Reliable Ninjas we do not track or store any user information beyond what is necessary for service functionality. Specifically, IP addresses are temporarily logged solely for the purpose of rate limiting RPC usage. These logs are cleared weekly and are not stored or used for any other purpose. Reliable Ninjas values user privacy and ensures that no identifiable data is collected or retained. For more details, visit https://reliableninjas.com/privacy-policy.",
 };
 
 export const extraRpcs = {
@@ -3958,6 +3960,11 @@ export const extraRpcs = {
         tracking: "none",
         trackingDetails: privacyStatement.Histori,
       },
+      {
+        url: "https://zetachain-testnet-evm.reliableninjas.com",
+        tracking: "none",
+        trackingDetails: privacyStatement.ReliableNinjas,
+      },
     ],
   },
   7000: {
@@ -3996,6 +4003,11 @@ export const extraRpcs = {
         url: "https://node.histori.xyz/zetachain-mainnet/8ry9f6t9dct1se2hlagxnd9n2a",
         tracking: "none",
         trackingDetails: privacyStatement.Histori,
+      },
+      {
+        url: "https://zetachain-mainnet-evm.reliableninjas.com",
+        tracking: "none",
+        trackingDetails: privacyStatement.ReliableNinjas,
       },
     ],
   },
